@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TimelineItemComponent } from './timeline-item.component';
+import { StepComponent } from './step.component';
 
-describe('TimelineItemComponent', () => {
-  let component: TimelineItemComponent;
-  let fixture: ComponentFixture<TimelineItemComponent>;
+describe('StepComponent', () => {
+  let component: StepComponent;
+  let fixture: ComponentFixture<StepComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TimelineItemComponent ]
+      declarations: [ StepComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TimelineItemComponent);
+    fixture = TestBed.createComponent(StepComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,0 +1,21 @@
+<!--The content below is on ly a placeholder and can be replaced.-->
+<mat-toolbar color="primary">
+  <h1>Welcome to {{ title }}!</h1>
+</mat-toolbar>
+
+<div class="add-step-btn-container">
+  <button mat-raised-button color="primary" (click)="addStep()">Nouvelle étape</button>
+</div>
+
+<section class="flex-container">
+  <div class="step-container" *ngFor="let step of steps">
+    <div class="vertical-line-icon"></div>
+    <timeline-step class="step-card" [step]="step" (delete)="deleteStep($event)" (edit)="editStep($event)"></timeline-step>
+  </div>
+  <div class="vertical-line"></div>
+</section>
+<div class="add-step-fab-btn">
+  <button mat-fab color="accent" (click)="addStep()">
+    <mat-icon>add</mat-icon>
+  </button>
+</div>

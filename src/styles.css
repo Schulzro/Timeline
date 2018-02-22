@@ -1,2 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
-@import '~@angular/material/prebuilt-themes/pink-bluegrey.css';
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+.mat-dialog-actions-btns {
+display: flex;
+justify-content: flex-end;
+}
+
+body {
+    margin :  0 0 0 0;
+}

@@ -1,0 +1,19 @@
+<mat-card>
+  <mat-card-title>{{ step.title }}</mat-card-title>
+  <mat-divider [inset]="true"></mat-divider>
+  <mat-card-content class="step-content">
+    <button mat-mini-fab class="step-settings-btn" (click)="toggleSettings()">
+      <mat-icon class="arrow_icon">{{showSettings ? 'keyboard_arrow_up' : 'keyboard_arrow_down'}}</mat-icon>
+    </button>
+    <p class="step-content-notes">{{ step.notes }}</p>
+  </mat-card-content>
+  <mat-card-footer></mat-card-footer>
+</mat-card>
+<div class="button-row mini-fab-actions-btn-row" *ngIf="showSettings">
+  <button mat-mini-fab class="action-fab-btn" (click)="deleteStep()">
+    <mat-icon>delete</mat-icon>
+  </button>
+  <button mat-mini-fab class="action-fab-btn" (click)="editStep()">
+    <mat-icon>edit</mat-icon>
+  </button>
+</div>

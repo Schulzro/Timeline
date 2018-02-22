@@ -1,0 +1,26 @@
+.header-background {
+    background: #673ab7;
+    overflow: hidden;
+}
+
+.header-section {
+    text-align: center;
+}
+
+.header-headline {
+    margin-top: 3em;
+    color: white;
+}
+
+.header-create-timeline {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.timeline-grid {
+    padding: 1em;
+}
+
+.mat-grid-tile {
+    background: turquoise;
+}

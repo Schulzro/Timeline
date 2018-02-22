@@ -1,0 +1,29 @@
+.step-content {
+    position: relative;
+}
+
+.step-content-notes {
+    margin-top: 2vh;
+}
+
+.step-settings-btn {
+    position: absolute;
+    right: 2%;
+    bottom: 80%;
+    box-shadow: none;
+    background-color: #BDBDBD;
+}
+
+.mini-fab-actions-btn-row {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1vh;
+}
+
+.arrow_icon {
+    color: white;
+}
+
+.action-fab-btn {
+margin-right: 1vh;
+}
